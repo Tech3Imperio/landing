@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+.v-container > div {
+  flex: 1;
+}
+.v-right {
+  gap: 0.5rem;
+  margin-bottom: 8rem;
+}
+
+.value-provider {
+  margin: 1rem 0;
+}
+.value-icon {
+  background-color: var(--sixty);
+  height: 100%;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  margin-right: 1rem;
+  padding: 0.6rem;
+}
+.valuePrimary {
+  color: #1f3e72;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+}
+.value-btn {
+  /* margin-top: 1.1rem; */
+  font-size: 1.3rem;
+  padding: 0.6rem 2.3rem;
+}
+
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .valuePrimary {
+    font-size: 1rem;
+  }
+  .v-right {
+    margin-bottom: 1rem;
+  }
+}

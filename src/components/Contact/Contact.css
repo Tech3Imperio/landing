@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.c-container {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.c-container > div {
+  flex: 1;
+}
+.c-right {
+  width: 100%;
+}
+.c-left {
+  gap: 0.5rem;
+}
+.c-left > .secondaryText {
+  font-size: 1.1rem;
+}
+.contactModes {
+  margin-top: 1.3rem;
+  gap: 1rem;
+  background: var(--black);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.contactModes .row {
+  gap: 1.5rem;
+}
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 300ms ease-in;
+}
+
+.c-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+.form-up,
+.form-down,
+.form-middle {
+  text-align: center;
+}
+.form-up > input,
+.form-down > input,
+.form-middle > input {
+  font-size: 1.1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background: var(--black);
+  outline: none;
+  color: rgb(225, 216, 216);
+  font-family: "Montserrat", sans-serif;
+  width: 44%;
+}
+
+.form-up > input::placeholder,
+.form-down > input::placeholder,
+.form-middle > input::placeholder {
+  color: rgb(225, 216, 216);
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-text {
+  font-size: 1.1rem;
+  margin: 1rem;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+.contact-btn {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 0.6rem 2.3rem;
+}
+.blankspan {
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgb(225, 216, 216);
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+}
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  top: calc(100% + 6px);
+  left: 25%;
+  z-index: 1000;
+  width: 50%;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown div {
+  border: 2px solid var(--black);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: var(--sixty);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown div:hover {
+  background-color: grey;
+}
+
+@media (max-width: 1024px) {
+  .c-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .c-right {
+    justify-content: center;
+  }
+  .contactModes {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mode {
+    width: 100%;
+  }
+  .dropdown {
+    left: 9%;
+    width: 82%;
+  }
+  .dropdown div:hover {
+    background-color: none;
+  }
+  .form-up > input,
+  .form-down > input,
+  .form-middle > input {
+    width: 88%;
+  }
+}

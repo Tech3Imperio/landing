@@ -1,0 +1,91 @@
+/* .f-wrapper {
+} */
+
+.f-container {
+  background: var(--black);
+  color: var(--sixty);
+  justify-content: space-between;
+}
+
+.f-left {
+  gap: 1rem;
+}
+
+.f-left > .secondaryText {
+  padding: 10px;
+  font-size: 1rem;
+  text-shadow: 3px 3px 3px black;
+}
+.f-left .secondaryText > a {
+  text-shadow: 3px 3px 3px black;
+  display: block;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.f-left .secondaryText > a:hover {
+  color: lightBlue;
+  text-shadow: 5px 5px 5px #0007ff;
+}
+
+.f-menu {
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+/* Default styles for social media icons */
+.ficons {
+  margin-right: 10px;
+}
+.ficons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.ficons:nth-child(1) a:hover {
+  color: #007bff;
+}
+.ficons:nth-child(2) a:hover {
+  color: #000000;
+}
+/* .ficons:nth-child(3) a:hover {
+  color: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+} */
+.ficons:nth-child(4) a:hover {
+  color: #ff0000;
+}
+.ficons:nth-child(5) a:hover {
+  color: #0a66c2;
+}
+.ficons:nth-child(6) a:hover {
+  color: #e60023;
+}
+.ficons:nth-child(7) a:hover {
+  color: #f52936;
+}
+@media (max-width: 576px) {
+  .ficons {
+    margin-right: 0; /* Remove margin for extra small screens */
+  }
+
+  .ficons a {
+    font-size: 18px; /* Further decrease font size for extra small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    justify-content: center;
+  }
+  .f-container > div {
+    align-items: center !important;
+    text-align: center;
+  }
+  .ficons {
+    margin-right: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .ficons a {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+}
