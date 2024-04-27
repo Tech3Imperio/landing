@@ -80,22 +80,7 @@ const Contact = () => {
         State: selectedState,
         City: selectedCity,
       };
-      const text = `Greetings Imperio Railing System,
-I am interested in acquiring more information and require some details. Kindly find my information below:
-
-==============================
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Quantity: ${quantity}
-State: ${selectedState}
-City:${selectedCity}
-==============================
-
-Anticipating your prompt response.
-Best regards,
-${name}
-`;
+      const text = `Greetings Imperio Railing System,\nI am interested in acquiring more information and require some details. Kindly find my information below:\n\n==============================\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nQuantity: ${quantity}\nState: ${selectedState}\nCity:${selectedCity}\n==============================\n\nAnticipating your prompt response.\nBest regards,\n${name}`;
 
       axios
         .post(
@@ -115,11 +100,11 @@ ${name}
 
           setTimeout(() => {
             window.open(
-              `https://api.whatsapp.com/send/?phone=${9372885433}&text=${encodeURI(
+              `https://api.whatsapp.com/send/?phone=${8591953385}&text=${encodeURI(
                 text
-              )}&app_absent=0`
+              )}&type=phone_number&app_absent=0`
             );
-            window.location.assign("http://www.imperiorailing.com/"); // Replace with your desired URL
+            window.location.assign("https://www.imperiorailing.com/"); // Replace with your desired URL
           }, 2000); // Change the delay time (in milliseconds) as needed
         })
         .catch((error) => {
