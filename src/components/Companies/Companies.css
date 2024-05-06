@@ -28,8 +28,8 @@
 @media (max-width: 1100px) {
   .c-container > div > a > img,
   .c-container > img {
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 12rem;
     margin: 9.765px;
   }
 }

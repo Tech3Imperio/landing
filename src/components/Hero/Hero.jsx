@@ -6,31 +6,21 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const runningFeets = () => {
-    const baseDate = new Date("1/01/2024");
-    const currentDate = new Date();
-
-    const diffInDays = Math.floor(
-      (currentDate - baseDate) / (1000 * 60 * 60 * 24)
-    );
-
-    const leapYears = countLeapYears(
-      baseDate.getFullYear(),
-      currentDate.getFullYear()
-    );
-
-    const totalDays = diffInDays + leapYears;
-    console.log(totalDays, diffInDays, leapYears);
-    return totalDays * 121;
+    const baseDate = new Date("01/1/2024");
+    const currentDate = new Date("01/1/2025");
+    return Math.floor((currentDate - baseDate) / 86400000) * 121 + 400000;
   };
 
-  const countLeapYears = (startYear, endYear) => {
-    let count = 0;
-    for (let year = startYear; year < endYear; year++) {
-      if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
-        count++;
-      }
+  const happyCustomers = () => {
+    const baseDate = new Date("01/1/2024");
+    const currentDate = new Date();
+
+    let totalMonths =
+      Math.floor((currentDate - baseDate) / 2592000000) * 3 + 2200;
+    if (totalMonths % 2 === 0) {
+      totalMonths += 1;
     }
-    return count;
+    return totalMonths;
   };
 
   return (
@@ -62,7 +52,7 @@ const Hero = () => {
             <div className="flexColCenter stat">
               <span>
                 <CountUp
-                  start={0}
+                  start={300000}
                   end={runningFeets()}
                   duration={5}
                   className="hero-number"
@@ -75,7 +65,7 @@ const Hero = () => {
               <span>
                 <CountUp
                   start={1500}
-                  end={2236}
+                  end={happyCustomers()}
                   duration={5}
                   className="hero-number"
                 />

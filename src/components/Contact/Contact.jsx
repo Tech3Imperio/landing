@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import "./Contact.css";
+import React, { useState } from "react";
 import data from "./cities.json";
 import axios from "axios";
 import { imageContact as image } from "../Assets/images";
