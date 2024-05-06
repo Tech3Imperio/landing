@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const runningFeets = () => {
     const baseDate = new Date("01/1/2024");
-    const currentDate = new Date("01/1/2025");
+    const currentDate = new Date();
     return Math.floor((currentDate - baseDate) / 86400000) * 121 + 400000;
   };
 
